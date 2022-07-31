@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apurv's Portfolio</title>
+    <title>Apurv - Web Developer</title>
+    <link rel="icon" type="image/x-icon" href="/Images/favicon.ico">
     <link rel="stylesheet" href="input.css">
 </head>
 
@@ -19,9 +20,9 @@
                  use hamburger menu in mobile -->
             <div class="hidden lg:flex space-x-9 items-center">
                 <a href="#" class="hover:border-b-4 rounded-sm  hover:border-red-700">Home</a>
+                <a href="#" class="hover:border-b-4 rounded-sm  hover:border-red-700">About</a>
                 <a href="#" class="hover:border-b-4 rounded-sm  hover:border-red-700">Skills</a>
                 <a href="#projects" class="hover:border-b-4 rounded-sm  hover:border-red-700">Projects</a>
-                <a href="#education" class="hover:border-b-4 rounded-sm  hover:border-red-700">Education</a>
                 <a href="#projects" class="hover:border-b-4 rounded-sm  hover:border-red-700">Resume</a>
                 <a href="#contact"
                     class="px-5 py-1.5 font-semibold  rounded-md  shadow-lg shadow-[red] text-red-700 hover:shadow-lg hover:text-blue-400 hover:shadow-blue-400"><button>Contact
@@ -40,6 +41,9 @@
 
                 <a href="">
                     <div class=" my-16  ">Home</div>
+                </a>
+                <a href="">
+                    <div class=" my-16  ">About</div>
                 </a>
                 <a href="">
                     <div class=" my-16  ">Skills</div>
@@ -128,7 +132,7 @@
     <!-- Skills section start -->
     <div class="container mt-10 md:mt-16 mx-auto px-8 md:px-14 lg:px-24 w-full">
         <div>
-            <h2 class="text-5xl font-bold my-4 mb-4">Skills</h2>
+            <h2 class="text-3xl md:text-4xl font-bold my-4 mb-4">Skills</h2>
         </div>
 
         <div class="text-lg">
@@ -250,31 +254,29 @@
     <!-- Projects starts -->
     <div class=" mt-8 md:mt-14 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
         <section class="w-full">
-            <h2 id="work" class="secondary-title text-5xl font-bold my-2 md:my-4 md:pl-4">Projects</h2>
+            <h2 id="work" class="secondary-title text-3xl md:text-4xl font-bold my-2 md:my-4 md:pl-4">Projects</h2>
 
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
 
 
-                <!-- Project - 1 start -->
-                <div class="w-full  md:w-[40vw]  lg:w-[27vw] sm:my-6  mx-auto my-3">
+                <!-- Project - 1 start (News app with react) -->
+                <div class="w-full  md:w-[40vw]  lg:w-[27vw] sm:my-6   mx-auto my-3 lg:my-3 hover:text-green-300">
                     <!-- Image div -->
-                    <div><img
+                    <div><a href="https://github.com/Apurv-Here/News-App-with-React" target="_blank"><img
                             src="https://images.unsplash.com/photo-1576153192396-180ecef2a715?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
-                            class="w-full  h-36 lg:h-72 object-cover"></div>
+                            class="w-full  h-36 lg:h-72 object-cover" alt="newsapp"></a></div>
 
                     <!-- description -->
                     <div class="flex">
-                        <div class=" pt-2   "><img class=" h-12 w-12   object-cover " src="/Images/html_logo.png"
-                                alt="logo"></div>
+                        <div class=" pt-4   "><img class=" h-12 w-12   object-cover " src="/Images/react_logo.png"
+                                alt="newsapp"></div>
                         <div>
                             <div class="">
-                                <h3 class="py-3 pl-4 pr-1 md:px-4 text-base font-bold">What is the Mamba Mentality? Kobe
-                                    explain what the mentality.</h3>
+                                <h3 class="pt-3 pb-3 pl-4 pr-1 md:px-4 text-base font-bold">News Web Application</h3>
                             </div>
                             <div class="">
-                                <p class="text-xs  text-secondary pl-4 pr-1 md:px-4 ">Mamba MentalityMamba
-                                    MentalityMamba MentalityMamba MentalityMamba Mentality</p>
+                                <a  href="https://github.com/Apurv-Here/News-App-with-React" target="_blank"><p class="text-xs  text-secondary pl-4 pr-1 md:px-4 hover:text-green-300">Github Link</p></a>
                             </div>
 
                         </div>
@@ -282,136 +284,140 @@
 
                 </div>
                 <!-- Project - 1 end -->
-                <!-- Project - 1 start -->
-                <div class="w-full  md:w-[40vw]  lg:w-[27vw] sm:my-6  mx-auto my-3">
+
+                <!-- Project - 2 start (Microsoft frontend clone)-->
+                <div class="w-full  md:w-[40vw]  lg:w-[27vw] sm:my-6  mx-auto my-3 lg:my-3 hover:text-green-300">
                     <!-- Image div -->
-                    <div><img
-                            src="https://images.unsplash.com/photo-1576153192396-180ecef2a715?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
-                            class="w-full  h-36 lg:h-72 object-cover"></div>
+                    <div><a href="https://choubey-microsoft-clone.netlify.app/" target="_blank"><img
+                        src="/Images/microsoftClone.png"
+                        class="w-full  h-36 lg:h-72 object-cover" alt="microsoft"></a></div>
 
                     <!-- description -->
                     <div class="flex">
-                        <div class=" pt-2   "><img class=" h-12 w-12   object-cover " src="/Images/html_logo.png"
-                                alt="logo"></div>
+                        <div class=" pt-4   "><img class=" h-12 w-12   object-cover " src="/Images/tailwindcss_logo.png"
+                                alt="microsoft"></div>
                         <div>
                             <div class="">
-                                <h3 class="py-3 pl-4 pr-1 md:px-4 text-base font-bold">What is the Mamba Mentality? Kobe
-                                    explain what the mentality.</h3>
+                                <h3 class="pt-3 pb-3 pl-4 pr-1 md:px-4 text-base font-bold">Microsoft Homepage Clone (frontend only)</h3>
                             </div>
                             <div class="">
-                                <p class="text-xs  text-secondary pl-4 pr-1 md:px-4 ">Mamba MentalityMamba
-                                    MentalityMamba MentalityMamba MentalityMamba Mentality</p>
+                                <a  href="https://github.com/Apurv-Here/Microsoft-Homepage-Second-Website-Challenge" target="_blank"><p class="text-xs mb-2  text-secondary pl-4 pr-1 md:px-4 hover:text-green-300">Github Link</p></a>
+                                <a  href="https://choubey-microsoft-clone.netlify.app/" target="_blank"><p class="text-xs  mt-2 text-secondary pl-4 pr-1 md:px-4 hover:text-green-300">Live Link</p></a>
+                                
                             </div>
 
                         </div>
                     </div>
 
                 </div>
-                <!-- Project - 1 end -->
-                <!-- Project - 1 start -->
-                <div class="w-full  md:w-[40vw]  lg:w-[27vw] sm:my-6  mx-auto my-3">
+                <!-- Project - 2 end -->
+
+                <!-- Project - 3 start (Text utility app) -->
+                <div class="w-full  md:w-[40vw]  lg:w-[27vw] sm:my-6  mx-auto my-3 lg:my-3 hover:text-green-300">
                     <!-- Image div -->
-                    <div><img
-                            src="https://images.unsplash.com/photo-1576153192396-180ecef2a715?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
-                            class="w-full  h-36 lg:h-72 object-cover"></div>
+                    <div><a href="https://apurv-here.github.io/TextUtils-with-React/" target="_blank"><img
+                            src="/Images/textutility.png"
+                            class="w-full  h-36 lg:h-72 object-cover" alt="textUtility"></a></div>
 
                     <!-- description -->
                     <div class="flex">
-                        <div class=" pt-2   "><img class=" h-12 w-12   object-cover " src="/Images/html_logo.png"
-                                alt="logo"></div>
+                        <div class=" pt-4   "><img class=" h-12 w-12   object-cover " src="/Images/bootstrap_logo.png"
+                                alt="textUtility"></div>
                         <div>
                             <div class="">
-                                <h3 class="py-3 pl-4 pr-1 md:px-4 text-base font-bold">What is the Mamba Mentality? Kobe
-                                    explain what the mentality.</h3>
+                                <h3 class="pt-3 pb-3 pl-4 pr-1 md:px-4 text-base font-bold">Text Utility App</h3>
                             </div>
                             <div class="">
-                                <p class="text-xs  text-secondary pl-4 pr-1 md:px-4 ">Mamba MentalityMamba
-                                    MentalityMamba MentalityMamba MentalityMamba Mentality</p>
+                                <a  href="https://github.com/Apurv-Here/TextUtils-with-React" target="_blank"><p class="text-xs mb-2  text-secondary pl-4 pr-1 md:px-4 hover:text-green-300">Github Link</p></a>
+                                <a  href="https://apurv-here.github.io/TextUtils-with-React/" target="_blank"><p class="text-xs  mt-2 text-secondary pl-4 pr-1 md:px-4 hover:text-green-300">Live Link</p></a>
+                                
                             </div>
 
                         </div>
                     </div>
 
                 </div>
-                <!-- Project - 1 end -->
-                <!-- Project - 1 start -->
-                <div class="w-full  md:w-[40vw]  lg:w-[27vw] sm:my-6  mx-auto my-3">
+                <!-- Project - 3 end -->
+
+                <!-- Project - 4 start (Desktop assistant with python)-->
+                <div class="w-full  md:w-[40vw]  lg:w-[27vw] sm:my-6  mx-auto my-3 lg:my-3 hover:text-green-300">
                     <!-- Image div -->
-                    <div><img
-                            src="https://images.unsplash.com/photo-1576153192396-180ecef2a715?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
-                            class="w-full  h-36 lg:h-72 object-cover"></div>
+                    <div><a href="https://github.com/Apurv-Here/Python-Desktop-Assistant" target="_blank"><img
+                        src="/Images/desktopAssistant.jpeg"
+                        class="w-full  h-36 lg:h-72 object-cover" alt="desktopAssistant"></a></div>
 
                     <!-- description -->
                     <div class="flex">
-                        <div class=" pt-2   "><img class=" h-12 w-12   object-cover " src="/Images/html_logo.png"
-                                alt="logo"></div>
+                        <div class=" pt-4   "><img class=" h-12 w-12   object-cover " src="/Images/python_logo.png"
+                                alt="desktopAssistant"></div>
                         <div>
                             <div class="">
-                                <h3 class="py-3 pl-4 pr-1 md:px-4 text-base font-bold">What is the Mamba Mentality? Kobe
-                                    explain what the mentality.</h3>
+                                <h3 class="pt-3 pb-3 pl-4 pr-1 md:px-4 text-base font-bold">Desktop Assistant With Python</h3>
                             </div>
                             <div class="">
-                                <p class="text-xs  text-secondary pl-4 pr-1 md:px-4 ">Mamba MentalityMamba
-                                    MentalityMamba MentalityMamba MentalityMamba Mentality</p>
+                                <a  href="https://github.com/Apurv-Here/Python-Desktop-Assistant" target="_blank"><p class="text-xs   text-secondary pl-4 pr-1 md:px-4 hover:text-green-300">Github Link</p></a>
+                                
                             </div>
 
                         </div>
                     </div>
 
                 </div>
-                <!-- Project - 1 end -->
-                <!-- Project - 1 start -->
-                <div class="w-full  md:w-[40vw]  lg:w-[27vw] sm:my-6  mx-auto my-3">
+                <!-- Project - 4 end -->
+
+                <!-- Project - 5 start (United stand website)-->
+                <div class="w-full  md:w-[40vw]  lg:w-[27vw] sm:my-6  mx-auto my-3 lg:my-3 hover:text-green-300">
                     <!-- Image div -->
-                    <div><img
-                            src="https://images.unsplash.com/photo-1576153192396-180ecef2a715?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
-                            class="w-full  h-36 lg:h-72 object-cover"></div>
+                    <div><a href="https://6290d40f07a43c3639084f13--glowing-flan-36c542.netlify.app/" target="_blank"><img
+                        src="/Images/unitedStandClone.png"
+                        class="w-full  h-36 lg:h-72 object-cover" alt="unitedStand"></a></div>
 
                     <!-- description -->
                     <div class="flex">
-                        <div class=" pt-2   "><img class=" h-12 w-12   object-cover " src="/Images/html_logo.png"
-                                alt="logo"></div>
+                        <div class=" pt-4   "><img class=" h-12 w-12   object-cover " src="/Images/html_logo.png"
+                                alt="unitedStand"></div>
                         <div>
                             <div class="">
-                                <h3 class="py-3 pl-4 pr-1 md:px-4 text-base font-bold">What is the Mamba Mentality? Kobe
-                                    explain what the mentality.</h3>
+                                <h3 class="pt-3 pb-3 pl-4 pr-1 md:px-4 text-base font-bold">The United Stand Football Website</h3>
                             </div>
                             <div class="">
-                                <p class="text-xs  text-secondary pl-4 pr-1 md:px-4 ">Mamba MentalityMamba
-                                    MentalityMamba MentalityMamba MentalityMamba Mentality</p>
+                                <a  href="https://github.com/Apurv-Here/The-United-Stand-First-Website-Challenge" target="_blank"><p class="text-xs mb-2  text-secondary pl-4 pr-1 md:px-4 hover:text-green-300">Github Link</p></a>
+                                <a  href="https://6290d40f07a43c3639084f13--glowing-flan-36c542.netlify.app/" target="_blank"><p class="text-xs  mt-2 text-secondary pl-4 pr-1 md:px-4 hover:text-green-300">Live Link</p></a>
+                                
                             </div>
 
                         </div>
                     </div>
 
                 </div>
-                <!-- Project - 1 end -->
-                <!-- Project - 1 start -->
-                <div class="w-full  md:w-[40vw]  lg:w-[27vw] sm:my-6  mx-auto my-3">
+                <!-- Project - 5 end -->
+
+                <!-- Project - 6 start (Click game) -->
+                <div class="w-full  md:w-[40vw]  lg:w-[27vw] sm:my-6  mx-auto my-3 lg:my-3 hover:text-green-300">
                     <!-- Image div -->
-                    <div><img
-                            src="https://images.unsplash.com/photo-1576153192396-180ecef2a715?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
-                            class="w-full  h-36 lg:h-72 object-cover"></div>
+                    <div><a href="https://clickgame5.netlify.app/" target="_blank"><img
+                        src="/Images/clickgame.png"
+                        class="w-full  h-36 lg:h-72 object-cover" alt="clickgame"></a></div>
 
                     <!-- description -->
                     <div class="flex">
-                        <div class=" pt-2   "><img class=" h-12 w-12   object-cover " src="/Images/html_logo.png"
-                                alt="logo"></div>
+                        <div class=" pt-4   "><img class=" h-12 w-12   object-cover " src="/Images/css_logo.png"
+                                alt="clickgame"></div>
                         <div>
                             <div class="">
-                                <h3 class="py-3 pl-4 pr-1 md:px-4 text-base font-bold">What is the Mamba Mentality? Kobe
-                                    explain what the mentality.</h3>
+                                <h3 class="pt-3 pb-3 pl-4 pr-1 md:px-4 text-base font-bold">Clickgame</h3>
                             </div>
                             <div class="">
-                                <p class="text-xs  text-secondary pl-4 pr-1 md:px-4 ">Mamba MentalityMamba
-                                    MentalityMamba MentalityMamba MentalityMamba Mentality</p>
+                                <a  href="https://github.com/Apurv-Here/ClickGame-with-Javascript" target="_blank"><p class="text-xs mb-2  text-secondary pl-4 pr-1 md:px-4 hover:text-green-300">Github Link</p></a>
+                                <a  href="https://clickgame5.netlify.app/" target="_blank"><p class="text-xs  mt-2 text-secondary pl-4 pr-1 md:px-4 hover:text-green-300">Live Link</p></a>
+                                
                             </div>
 
                         </div>
                     </div>
 
                 </div>
-                <!-- Project - 1 end -->
+                <!-- Project - 6 end -->
 
 
 
@@ -431,7 +437,7 @@
     <!-- Education info start-->
     <div class=" mt-14 md:mt-28 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
         <section class="w-full">
-            <h2 id="clients" class="secondary-title text-5xl font-bold mt-4">Education</h2>
+            <h2 id="clients" class="secondary-title text-3xl md:text-4xl font-bold mt-4">Education</h2>
 
 
             <!-- Clients -->
@@ -489,10 +495,20 @@
     <!-- Education info ends-->
 
     <!-- Contact me starts -->
-    <div class="container mt-20  md:mt-32 mb-20 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+    <div
+        class="container mt-20  md:mt-32 mb-20 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
         <section class="w-full">
-            <h2 id="clients" class="secondary-title text-5xl font-bold mt-4">Contact Me</h2>
-            <p class="section-paragraph mt-10">Feel free to to contact me any time, through any method below.</p>
+            <h2 id="clients" class="secondary-title text-3xl md:text-4xl font-bold mt-4">Contact Me</h2>
+            <a href="mailto:choubeyfreelancer@gmail.com" target="_blank">
+                <div
+                    class="my-10 md:my-14 rounded-md text-center p-3 md:p-6  text-lg sm:text-xl md:text-3xl font-bold border-t-[1px] border-green-300 hover:border-green-700 shadow-md  shadow-green-300 hover:shadow-green-700 inline-block"><h4>
+                    choubeyfreelancer@gmail.com</h4>
+                </div>
+            </a>
+
+            <p class="section-paragraph mt-8  text-lg font-bold text-secondary">Don't want to open the email
+                app ? Don't
+                bother, i got you !</p>
 
             <div class="w-full grid lg:grid-cols-2 gap-8 lg:gap-32 mt-10">
                 <div class="space-y-12">
@@ -514,33 +530,44 @@
 
                 <div class="mt-12">
                     <!-- Contact info -->
-                    <a href="mailto:email@mydomain.com"
-                        class=" underline mt-3 block text-2xl font-bold hover:text-green-200 ">email@mydomain.com</a>
+
 
                     <!-- Socials -->
                     <!-- Linkedin -->
-                    <div class="flex mt-10 space-x-6">
-                        <div>
-                            <div
-                                class="icon_linkedin mr-2 rounded-full border-2 border-[#56a5da] fill-[#56a5da] bg-black hover:border-black hover:bg-white  hover:fill-black  ">
-                                <a href=""><svg width="3rem" height="3rem" viewBox="0 0 512 512">
-                                        <path
-                                            d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z" />
-                                    </svg></a>
-                            </div>
+                    <div class="mt-4 lg:mt-20 ">
+                        <div class=" m-2">
+                            <div class=" inline-block"><a class="hover:text-green-300 " target="_blank"
+                                    href="www.google,com">
+                                    <div>
+                                        <div
+                                            class="icon_linkedin mr-2 rounded-full border-2 border-[#56a5da] fill-[#56a5da] bg-black hover:border-black hover:bg-white  hover:fill-black  inline-block">
+                                            <svg width="3rem" height="3rem" viewBox="0 0 512 512">
+                                                <path
+                                                    d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z" />
+                                            </svg>
+                                        </div>
+                                        <div class="my-2 text-lg font-semibold">Connect with me on Linkedin</div>
+
+                                    </div>
+                                </a></div>
                         </div>
 
 
-                        <div>
-                            <!-- Twitter -->
-                            <div
-                                class="icon_twitter ml-1.5 rounded-full border-2 border-[#1d9bf0] bg-[#1d9bf0]  fill-black hover:border-black hover:bg-black hover:fill-white">
-                                <a href=""><svg viewBox="0 0 24 24" width="3rem" height="3rem">
-                                        <path
-                                            d="M12,0C5.4,0,0,5.4,0,12s5.4,12,12,12c6.6,0,12-5.4,12-12S18.6,0,12,0z M18,9.7c0,0.1,0,0.2,0,0.4c0,3.8-2.9,8.2-8.2,8.2c-1.6,0-3.2-0.5-4.4-1.3c0.2,0,0.5,0,0.7,0c1.4,0,2.6-0.5,3.6-1.2c-1.3,0-2.3-0.9-2.7-2c0.2,0,0.4,0.1,0.5,0.1c0.3,0,0.5,0,0.8-0.1C6.9,13.5,6,12.3,6,10.9c0,0,0,0,0,0c0.4,0.2,0.8,0.3,1.3,0.4C6.5,10.7,6,9.9,6,8.8c0-0.5,0.1-1,0.4-1.5c1.4,1.8,3.6,2.9,6,3c-0.1-0.2-0.1-0.4-0.1-0.7c0-1.6,1.3-2.9,2.9-2.9c0.8,0,1.6,0.3,2.1,0.9c0.7-0.1,1.3-0.4,1.8-0.7c-0.2,0.7-0.7,1.2-1.3,1.6c0.6-0.1,1.1-0.2,1.7-0.5C19.1,8.8,18.6,9.3,18,9.7z">
-                                        </path>
-                                    </svg></a>
-                            </div>
+                        <div class=" m-2">
+                            <div class=" inline-block"><a class="hover:text-green-300" target="_blank" href="#">
+                                    <div>
+                                        <!-- Twitter -->
+                                        <div
+                                            class="icon_twitter  rounded-full border-2 border-[#1d9bf0] bg-[#1d9bf0]  fill-black hover:border-black hover:bg-black hover:fill-white inline-block mt-14">
+                                            <svg viewBox="0 0 24 24" width="3rem" height="3rem">
+                                                <path
+                                                    d="M12,0C5.4,0,0,5.4,0,12s5.4,12,12,12c6.6,0,12-5.4,12-12S18.6,0,12,0z M18,9.7c0,0.1,0,0.2,0,0.4c0,3.8-2.9,8.2-8.2,8.2c-1.6,0-3.2-0.5-4.4-1.3c0.2,0,0.5,0,0.7,0c1.4,0,2.6-0.5,3.6-1.2c-1.3,0-2.3-0.9-2.7-2c0.2,0,0.4,0.1,0.5,0.1c0.3,0,0.5,0,0.8-0.1C6.9,13.5,6,12.3,6,10.9c0,0,0,0,0,0c0.4,0.2,0.8,0.3,1.3,0.4C6.5,10.7,6,9.9,6,8.8c0-0.5,0.1-1,0.4-1.5c1.4,1.8,3.6,2.9,6,3c-0.1-0.2-0.1-0.4-0.1-0.7c0-1.6,1.3-2.9,2.9-2.9c0.8,0,1.6,0.3,2.1,0.9c0.7-0.1,1.3-0.4,1.8-0.7c-0.2,0.7-0.7,1.2-1.3,1.6c0.6-0.1,1.1-0.2,1.7-0.5C19.1,8.8,18.6,9.3,18,9.7z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div class="my-2 text-lg font-semibold">Connect with me on Twitter</div>
+                                    </div>
+                                </a></div>
                         </div>
 
 
