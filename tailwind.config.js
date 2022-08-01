@@ -1,7 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["*"],
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide')
+  ],
   
   darkMode: false, // or 'media' or 'class'
   theme: {
