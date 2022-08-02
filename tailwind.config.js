@@ -5,7 +5,6 @@ module.exports = {
     require('tailwind-scrollbar-hide')
   ],
   
-  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
