@@ -11,7 +11,7 @@
 </head>
 
 <body class="bg-body text-white font-poppins pb-12">
-    <header class="md:py-8 lg:sticky lg:top-0 lg:z-50 bg-body flex items-center container h-16 lg:h-20">
+    <header class="md:py-8 lg:sticky lg:top-0 lg:z-50 bg-body flex items-center container h-16 lg:h-20 sticky top-0 z-50">
         <div
             class="container text-xl flex justify-between items-center  mx-auto px-8 sm:px-10 md:px-14 lg:px-24 w-full overflow-x-hidden">
             <div class="text-2xl font-bold ">Apurv Choubey</div>
@@ -19,13 +19,13 @@
             <!-- we will hide this class when on mobile and make flex on large screen and will
                  use hamburger menu in mobile -->
             <div class="hidden lg:flex space-x-9 items-center">
-                <a href="#" class="hover:border-b-4 rounded-sm  hover:border-red-700">Home</a>
-                <a href="#" class="hover:border-b-4 rounded-sm  hover:border-red-700">About</a>
-                <a href="#" class="hover:border-b-4 rounded-sm  hover:border-red-700">Skills</a>
-                <a href="#projects" class="hover:border-b-4 rounded-sm  hover:border-red-700">Projects</a>
-                <a href="https://drive.google.com/drive/folders/1LMZMLQ7wL-tQvWhtHPdZE2EIazpn7fyk" target="_blank" class="hover:border-b-4 rounded-sm  hover:border-red-700">Resume</a>
+                <a href="#" class="nav-dot  hover:border-b-4 rounded-sm  hover:border-red-700 transition-colors duration-500 ease-in">Home</a>
+                <a href="#about" class="nav-dot  hover:border-b-4 rounded-sm  hover:border-red-700 transition-colors duration-500 ease-in">About</a>
+                <a href="#skills" class="nav-dot hover:border-b-4 rounded-sm  hover:border-red-700 transition-colors duration-500 ease-in">Skills</a>
+                <a href="#projects" class="nav-dot hover:border-b-4 rounded-sm  hover:border-red-700 transition-colors duration-500 ease-in">Projects</a>
+                <a href="https://drive.google.com/drive/folders/1LMZMLQ7wL-tQvWhtHPdZE2EIazpn7fyk" target="_blank" class="nav-dot hover:border-b-4 rounded-sm  hover:border-red-700 transition-colors duration-500 ease-in">Resume</a>
                 <a href="#contact"
-                    class="px-5 py-1.5 font-semibold  rounded-md  shadow-lg shadow-[red] text-red-700 hover:shadow-lg hover:text-blue-400 hover:shadow-blue-400"><button>Contact
+                    class="nav-dot px-5 py-1.5 font-semibold  rounded-md  shadow-lg border-2 border-green-300 text-green-300 hover:shadow-lg hover:border-blue-400 hover:text-blue-400 hover:shadow-blue-400 transition-colors duration-500 ease-in "><button>Contact
                         Me</button></a>
             </div>
             <div class="hamburger inline-block p-4 lg:hidden lg:invisible" id="hamburger3line"
@@ -42,25 +42,25 @@
     <div class="hidden invisible lg:hidden lg:invisible mx-9 md:ml-20  " id="hamBurgerMenu">
         <div class=" text-xl ">
 
-            <a href="">
-                <div class=" my-16  ">Home</div>
+            <a href="#">
+                <div class="nav-dot my-16  ">Home</div>
             </a>
-            <a href="">
-                <div class=" my-16  ">About</div>
+            <a href="#about">
+                <div class="nav-dot my-16  ">About</div>
             </a>
-            <a href="">
-                <div class=" my-16  ">Skills</div>
+            <a href="#skills">
+                <div class="nav-dot my-16  ">Skills</div>
             </a>
-            <a href="">
-                <div class=" my-16  ">Projects</div>
+            <a href="#projects">
+                <div class="nav-dot my-16  ">Projects</div>
             </a>
-            <a href="">
-                <div class=" mt-16  ">Education</div>
+            <a href="#education">
+                <div class="nav-dot mt-16  ">Education</div>
             </a>
             <a href="https://drive.google.com/drive/folders/1LMZMLQ7wL-tQvWhtHPdZE2EIazpn7fyk" target="_blank">
                 <div class=" my-16  ">Resume</div>
             </a>
-            <a href="">
+            <a href="#contact">
                 <div class=" mt-16  ">Contact Me</div>
             </a>
 
@@ -134,7 +134,7 @@
     <!-- About section starts -->
     <div class="container mt-10 md:mt-16 mx-auto px-8 md:px-14 lg:px-16 w-full">
         <div>
-            <h2 class="text-3xl md:text-4xl font-bold my-4 mb-4">About</h2>
+            <h2 id="about" class="text-3xl md:text-4xl font-bold my-4 mb-4">About</h2>
         </div>
         <div class="text-lg">
             <p>Hi. I'm <strong>Apurv Kumar Choubey.</strong> I have completed my Bachelor of Technology in Electronics and Communication Engineering at <strong> Vellore Institute of Technology (2018-2022).</strong> I like exploring various domains of Computer Science and learning new frameworks and technologies.</p>
@@ -158,7 +158,7 @@
     <!-- Skills section start -->
     <div class="container mt-8 md:mt-24 mx-auto px-8 md:px-14 lg:px-16 w-full">
         <div>
-            <h2 class="text-3xl md:text-4xl font-bold my-4 mb-4">Skills</h2>
+            <h2 id="skills" class="text-3xl md:text-4xl font-bold my-4 mb-4">Skills</h2>
         </div>
 
         <div class="text-lg">
@@ -280,22 +280,22 @@
     <!-- Projects starts -->
     <div class=" mt-8 md:mt-24 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
         <section class="w-full">
-            <h2 id="work" class="secondary-title text-3xl md:text-4xl font-bold my-2 md:my-4 ">Projects</h2>
+            <h2 id="projects" class="secondary-title text-3xl md:text-4xl font-bold my-2 md:my-4 ">Projects</h2>
 
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
 
 
                 <!-- Project - 1 start (News app with react) -->
-                <div class="w-full  md:w-[40vw]  lg:w-[27vw] sm:my-6   mx-auto my-3 lg:my-3 hover:text-green-300">
+                <div class="w-full  md:w-[40vw]  lg:w-[27vw] sm:my-6   mx-auto  my-3 lg:my-3 lg:mb-6 hover:text-green-300">
                     <!-- Image div -->
                     <div><a href="https://github.com/Apurv-Here/News-App-with-React" target="_blank"><img
                             src="/Images/newsAppReact.png"
-                            class="w-full  h-36 lg:h-72 object-cover" alt="newsapp"></a></div>
+                            class="w-full  h-36 lg:h-60 object-cover" alt="newsapp"></a></div>
 
                     <!-- description -->
                     <div class="flex">
-                        <div class=" pt-4   "><img class=" h-12 w-12   object-cover " src="/Images/react_logo.png"
+                        <div class=" pt-4   "><img class=" h-10 w-10   object-cover " src="/Images/react_logo.png"
                                 alt="newsapp"></div>
                         <div>
                             <div class="">
@@ -312,11 +312,11 @@
                 <!-- Project - 1 end -->
 
                 <!-- Project - 2 start (Microsoft frontend clone)-->
-                <div class="w-full  md:w-[40vw]  lg:w-[27vw] sm:my-6  mx-auto my-3 lg:my-3 hover:text-green-300">
+                <div class="w-full  md:w-[40vw]  lg:w-[27vw] sm:my-6  mx-auto my-3 lg:my-3 lg:mb-6 hover:text-green-300">
                     <!-- Image div -->
                     <div><a href="https://choubey-microsoft-clone.netlify.app/" target="_blank"><img
                         src="/Images/microsoftClone.png"
-                        class="w-full  h-36 lg:h-72 object-cover" alt="microsoft"></a></div>
+                        class="w-full  h-36 lg:h-60 object-cover" alt="microsoft"></a></div>
 
                     <!-- description -->
                     <div class="flex">
@@ -339,11 +339,11 @@
                 <!-- Project - 2 end -->
 
                 <!-- Project - 3 start (Text utility app) -->
-                <div class="w-full  md:w-[40vw]  lg:w-[27vw] sm:my-6  mx-auto my-3 lg:my-3 hover:text-green-300">
+                <div class="w-full  md:w-[40vw]  lg:w-[27vw] sm:my-6  mx-auto my-3 lg:my-3 lg:mb-6 hover:text-green-300">
                     <!-- Image div -->
                     <div><a href="https://apurv-here.github.io/TextUtils-with-React/" target="_blank"><img
                             src="/Images/textutility.png"
-                            class="w-full  h-36 lg:h-72 object-cover" alt="textUtility"></a></div>
+                            class="w-full  h-36 lg:h-60 object-cover" alt="textUtility"></a></div>
 
                     <!-- description -->
                     <div class="flex">
@@ -366,15 +366,15 @@
                 <!-- Project - 3 end -->
 
                 <!-- Project - 4 start (Desktop assistant with python)-->
-                <div class="w-full  md:w-[40vw]  lg:w-[27vw] sm:my-6  mx-auto my-3 lg:my-3 hover:text-green-300">
+                <div class="w-full  md:w-[40vw]  lg:w-[27vw] sm:my-6  mx-auto my-3 lg:my-3 lg:mb-6 hover:text-green-300">
                     <!-- Image div -->
                     <div><a href="https://github.com/Apurv-Here/Python-Desktop-Assistant" target="_blank"><img
                         src="/Images/desktopAssistant.jpeg"
-                        class="w-full  h-36 lg:h-72 object-cover" alt="desktopAssistant"></a></div>
+                        class="w-full  h-36 lg:h-60 object-cover" alt="desktopAssistant"></a></div>
 
                     <!-- description -->
                     <div class="flex">
-                        <div class=" pt-4   "><img class=" h-12 w-12   object-cover " src="/Images/python_logo.png"
+                        <div class=" pt-4   "><img class=" h-10 w-10   object-cover " src="/Images/python_logo.png"
                                 alt="desktopAssistant"></div>
                         <div>
                             <div class="">
@@ -392,11 +392,11 @@
                 <!-- Project - 4 end -->
 
                 <!-- Project - 5 start (United stand website)-->
-                <div class="w-full  md:w-[40vw]  lg:w-[27vw] sm:my-6  mx-auto my-3 lg:my-3 hover:text-green-300">
+                <div class="w-full  md:w-[40vw]  lg:w-[27vw] sm:my-6  mx-auto my-3 lg:my-3 lg:mb-6 hover:text-green-300">
                     <!-- Image div -->
                     <div><a href="https://6290d40f07a43c3639084f13--glowing-flan-36c542.netlify.app/" target="_blank"><img
                         src="/Images/unitedStandClone.png"
-                        class="w-full  h-36 lg:h-72 object-cover" alt="unitedStand"></a></div>
+                        class="w-full  h-36 lg:h-60 object-cover" alt="unitedStand"></a></div>
 
                     <!-- description -->
                     <div class="flex">
@@ -419,11 +419,11 @@
                 <!-- Project - 5 end -->
 
                 <!-- Project - 6 start (Click game) -->
-                <div class="w-full  md:w-[40vw]  lg:w-[27vw] sm:my-6  mx-auto my-3 lg:my-3 hover:text-green-300">
+                <div class="w-full  md:w-[40vw]  lg:w-[27vw] sm:my-6  mx-auto my-3 lg:my-3 lg:mb-6 hover:text-green-300">
                     <!-- Image div -->
                     <div><a href="https://clickgame5.netlify.app/" target="_blank"><img
                         src="/Images/clickgame.png"
-                        class="w-full  h-36 lg:h-72 object-cover" alt="clickgame"></a></div>
+                        class="w-full  h-36 lg:h-60 object-cover" alt="clickgame"></a></div>
 
                     <!-- description -->
                     <div class="flex">
@@ -463,21 +463,21 @@
     <!-- Education info start-->
     <div class=" mt-8 md:mt-24 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
         <section class="w-full">
-            <h2 id="clients" class="secondary-title text-3xl md:text-4xl font-bold mt-4">Education</h2>
+            <h2 id="education" class="secondary-title text-3xl md:text-4xl font-bold mt-4">Education</h2>
 
 
-            <!-- Clients -->
+            <!-- Education -->
             <div class=" space-y-12 mt-8 lg:mb-16 lg:mt-8">
                 <div
                     class="w-full border border-nav p-8 pt-16 lg:p-16 lg:px-32 lg:py-20 lg:space-x-32 items-center lg:flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
 
-                    <!-- Client logo -->
+                    <!-- College logo -->
                     <div class=" lg:mb-0 flex justify-center items-center  ">
                         <img class="h-52 w-56 lg:h-52 lg:w-64    object-cover rounded-full" src="/Images/vit_logo.png"
                             alt="logo">
                     </div>
 
-                    <!-- Client info -->
+                    <!-- College info -->
                     <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
                         <h3 class="text-white text-3xl font-semibold ">Vellore Institute of Technology</h3>
 
@@ -493,7 +493,7 @@
                 <div
                     class="w-full border border-nav p-8 lg:p-16 lg:px-32 lg:py-20 lg:space-x-32 lg:flex justify-center items-center lg:justify-start flex-wrap lg:flex-nowrap">
 
-                    <!-- Client logo -->
+                    <!-- School logo -->
                     <div class="lg:mb-0 flex justify-center items-center">
                         <div class=" lg:mb-0 flex justify-center items-center  ">
                             <img class="h-52 w-56 lg:h-52 lg:w-64  object-cover rounded-full"
@@ -501,7 +501,7 @@
                         </div>
                     </div>
 
-                    <!-- Client info -->
+                    <!-- School info -->
                     <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
                         <h3 class="text-white text-3xl font-semibold">Somerville School</h3>
 
@@ -524,10 +524,10 @@
     <div
         class="container mt-20  md:mt-32 mb-20 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-16 w-full">
         <section class="w-full">
-            <h2 id="clients" class="secondary-title text-3xl md:text-4xl font-bold mt-4">Contact Me</h2>
+            <h2 id="contact" class="secondary-title text-3xl md:text-4xl font-bold mt-4">Contact Me</h2>
             <a href="mailto:choubeyfreelancer@gmail.com" target="_blank">
                 <div
-                    class="my-10 md:my-14 rounded-md text-center p-3 md:p-6  text-lg sm:text-xl md:text-3xl font-bold border-t-[1px] border-green-300 hover:border-green-700 shadow-md  shadow-green-300 hover:shadow-green-700 inline-block"><h4>
+                    class="my-10 md:my-14 rounded-md text-center p-3 md:p-6  text-lg sm:text-xl md:text-3xl font-bold border-[1px] border-green-300 hover:border-blue-400 shadow-lg  shadow-green-300 hover:shadow-blue-400 inline-block"><h4>
                     apurvchoubey7@gmail.com</h4>
                 </div>
             </a>
@@ -536,23 +536,35 @@
                 app ? Don't
                 bother, i got you !</p>
 
+                <!-- CONTACT FORM -->
             <div class="w-full grid lg:grid-cols-2 gap-8 lg:gap-32 mt-10">
+                <form action="https://formsubmit.co/apurvchoubey7@gmail.com" method="POST" >
+
+                    <!-- honepot -->
+                    <input class="hidden" type="text" name="_honey" >
+
+                    <!-- Disable captcha -->
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <!-- Success page -->
+                    <!-- <input type="hidden" name="_next" value="thankYou.html"> -->
+
                 <div class="space-y-12">
                     <div>
                         <label class="text-white block mb-6 text-xl font-bold">Name</label>
-                        <input class="w-full border border-input-border bg-input px-4 py-4">
+                        <input id="form_name" class="w-full border border-input-border bg-input px-4 py-4" required>
                     </div>
                     <div>
                         <label class="text-white block mb-6 text-xl font-bold">Email</label>
-                        <input type="email" class="w-full border border-input-border bg-input px-4 py-4">
+                        <input id="form_email" type="email" class="w-full border border-input-border bg-input px-4 py-4" required>
                     </div>
                     <div>
                         <label class="text-white block mb-6 text-xl font-bold">Message</label>
-                        <textarea type="email"
+                        <textarea id="form_message" type="email"
                             class="w-full border border-input-border bg-input px-4 py-4 h-56 resize-none"></textarea>
                     </div>
-                    <button class="px-6 py-2 bg-theme text-white font-bold hover:bg-blue-600">Send it!</button>
-                </div>
+                    <button id="form_submit" class="px-6 py-2 bg-theme text-white font-bold hover:bg-blue-600" onclick="submittingForm()">Send it!</button>
+                </div></form>
 
                 <div class="mt-12">
                     <!-- Contact info -->
@@ -560,7 +572,7 @@
 
                     <!-- Socials -->
                     <!-- Linkedin -->
-                    <div class="mt-4 lg:mt-20 ">
+                    <div class="mt-4  ">
                         <div class=" m-2">
                             <div class=" inline-block"><a class="hover:text-green-300 " target="_blank"
                                     href="www.google,com">

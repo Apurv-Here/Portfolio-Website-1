@@ -77,3 +77,28 @@ window.onload = function() {
     document.body.appendChild(css);
 };
 // code for typewriter to show your name ends
+ 
+// code for scroll on click on navbar starts
+
+function updateList() {
+	const titles = [...document.querySelectorAll('h1, h2')].sort((a, b) => {
+		return Math.abs(a.getBoundingClientRect().top) - Math.abs(b.getBoundingClientRect().top);
+	});
+
+	document.querySelectorAll(".selected-circle").forEach(c => c.classList.remove("selected-circle"));
+	
+	
+}
+
+updateList();
+window.addEventListener('scroll', () => {
+    updateList();
+})
+
+// code for scroll on click on navbar ends
+
+// code for contact form start
+
+
+
+// code for contact form end
