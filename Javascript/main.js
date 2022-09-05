@@ -1,5 +1,3 @@
-import resolveConfig from 'tailwindcss/resolveConfig'
-import tailwindConfig from './tailwind.config.js'
 
 // code for hamburger menu for mobile starts
 let count = 0;

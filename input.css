@@ -5,3 +5,37 @@
 html {
     scroll-behavior: smooth;
   }
+
+
+
+.img-wrapper {  
+  
+  overflow: hidden; 
+}
+
+.inner-img {
+  transition: 0.3s ease-in-out;
+}
+
+.inner-img:hover {
+  transform: scale(1.2);
+}
+
+/* Other styling elements, that are not necessary for the example */
+
+.img-wrapper {
+  /* display: inline-block; */
+  box-sizing: border-box;
+  /* border: 1px solid white; */
+}
+
+.box{
+ 
+  transition: 0.4s;
+
+}
+.box:hover{
+  transform: scale(1.3);
+  z-index: 2;
+  
+}
