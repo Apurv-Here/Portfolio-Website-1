@@ -1,2 +1,5 @@
-/node_modules
-/Hosting
+node_modules/
+
+/Hosting/index.html
+/Hosting/CSS/output.css
+/Hosting/Javascript/main.js
