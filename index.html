@@ -11,65 +11,67 @@
 
 </head>
 
-<body class="bg-body text-white font-poppins pb-12">
-    <div class="lg:sticky lg:top-0 lg:z-50">
-        <header class="md:py-8 lg:sticky lg:top-0 lg:z-50 bg-body flex items-center container h-16 lg:h-20 ">
+<body class="bg-black text-white font-poppins pb-12">
+    <!-- navbar starts -->
+    <div class=" bg-black text-white sticky top-0 z-100">
+        <header class=" md:py-8  bg-body flex items-center container h-16 lg:h-20 ">
             <div
                 class="container text-xl flex justify-between items-center  mx-auto px-8 sm:px-10 md:px-14 lg:px-24 w-full overflow-x-hidden">
-                <div class="text-2xl font-bold ">Apurv Choubey</div>
+                <a href="/"><div class="text-2xl font-bold ">Apurv Choubey</div></a>
 
                 <!-- we will hide this class when on mobile and make flex on large screen and will
                  use hamburger menu in mobile -->
                 <div class="hidden lg:flex space-x-9 items-center">
-                    <a href="#" class="nav-dot  hover:border-b-4 rounded-sm  hover:border-red-700 ">Home</a>
-                    <a href="#about" class="nav-dot  hover:border-b-4 rounded-sm  hover:border-red-700 ">About</a>
-                    <a href="#skills" class="nav-dot hover:border-b-4 rounded-sm  hover:border-red-700 ">Skills</a>
-                    <a href="#projects" class="nav-dot hover:border-b-4 rounded-sm  hover:border-red-700 ">Projects</a>
+                    <a href="#" class=" hover:border-b-4   hover:border-red-700 ">Home</a>
+                    <a href="#about" class=" hover:border-b-4   hover:border-red-700 ">About</a>
+                    <a href="#skills" class=" hover:border-b-4   hover:border-red-700 ">Skills</a>
+                    <a href="#projects" class=" hover:border-b-4   hover:border-red-700 ">Projects</a>
                     <a href="https://drive.google.com/drive/folders/1LMZMLQ7wL-tQvWhtHPdZE2EIazpn7fyk" target="_blank"
-                        class="nav-dot hover:border-b-4 rounded-sm  hover:border-red-700 ">Resume</a>
+                        class=" hover:border-b-4   hover:border-red-700 ">Resume</a>
                     <a href="#contact"
-                        class="nav-dot px-5 py-1.5 font-semibold  rounded-md  shadow-lg border-2 border-green-300 text-green-300 hover:shadow-lg hover:border-blue-400 hover:text-blue-400 hover:shadow-blue-400 "><button>Contact
+                        class=" px-5 py-1.5 font-semibold  rounded-md  shadow-lg border-2 border-green-300 text-green-300 hover:shadow-lg hover:border-red-700 hover:text-blue-400 "><button>Contact
                             Me</button></a>
                 </div>
-                <div class="hamburger inline-block p-4 lg:hidden lg:invisible" id="hamburger3line"
-                    onclick="mobileMenuShow()">
-                    <div class=" h-0.5 w-6 my-1 bg-white"></div>
-                    <div class=" h-0.5 w-6 my-1 bg-white"></div>
-                    <div class=" h-0.5 w-6 my-1 bg-white"></div>
-                </div>
+                
+                <div class="menu-btn lg:hidden lg:invisible">
+                    <div class="menu-btn__burger"></div>
+                  </div>
             </div>
 
-
-        </header>
-    </div>
-    <!-- On mobile it will be hamburger menu options on click and it will be hidden on large screen-->
-    <div class="hidden invisible lg:hidden lg:invisible mx-9 md:ml-20  " id="hamBurgerMenu">
-        <div class=" text-xl ">
+            <!-- On mobile it will be hamburger menu options on click and it will be hidden on large screen-->
+    <div id="hamBurgerMenu" class="hidden invisible absolute top-16  z-40  lg:hidden lg:invisible  md:ml-20 bg-black p-4   max-w-full  -right-0 text-center" >
+        <div class=" text-xl  ">
 
             <a href="#">
-                <div class="nav-dot my-16  ">Home</div>
+                <div class=" mt-9 mb-16  mr-12  ">Home</div>
             </a>
             <a href="#about">
-                <div class="nav-dot my-16  ">About</div>
+                <div class=" my-16  mr-12">About</div>
             </a>
             <a href="#skills">
-                <div class="nav-dot my-16  ">Skills</div>
+                <div class=" my-16  mr-12">Skills</div>
             </a>
             <a href="#projects">
-                <div class="nav-dot my-16  ">Projects</div>
+                <div class=" my-16  mr-12">Projects</div>
             </a>
             <a href="#education">
-                <div class="nav-dot mt-16  ">Education</div>
+                <div class=" mt-16  mr-12">Education</div>
             </a>
             <a href="https://drive.google.com/drive/folders/1LMZMLQ7wL-tQvWhtHPdZE2EIazpn7fyk" target="_blank">
-                <div class=" my-16  ">Resume</div>
+                <div class=" my-16  mr-12">Resume</div>
             </a>
             <a href="#contact">
-                <div class=" mt-16  ">Contact Me</div>
+                <div class=" mt-16  mr-12">Contact Me</div>
             </a>
 
         </div>
     </div>
+
+
+        </header>
+    </div>
+    <!-- navbar ends -->
+
 
 
     <!-- new banner start -->
@@ -156,9 +158,10 @@
     <!-- new banner end -->
 
     <!-- About section starts -->
+    <div id="about" class="h-12 w-5"></div>
     <div class="container mt-10 md:mt-16 mx-auto px-8 md:px-14 lg:px-16 w-full">
         <div>
-            <h2 id="about" class="text-3xl md:text-4xl font-bold my-4 mb-4">About</h2>
+            <h2  class="text-3xl md:text-4xl font-bold my-4 mb-4">About</h2>
         </div>
         <div class="text-lg">
             <p>Hi. I'm <strong>Apurv Kumar Choubey.</strong> I have completed my Bachelor of Technology in Electronics
@@ -192,9 +195,11 @@
     <!-- About section ends -->
 
     <!-- Skills section start -->
+    <div id="skills" class="h-8 w-5"></div>
+
     <div class="container mt-8 md:mt-24 mx-auto px-8 md:px-14 lg:px-16 w-full">
         <div>
-            <h2 id="skills" class="text-3xl md:text-4xl font-bold my-4 mb-4">Skills</h2>
+            <h2  class="text-3xl md:text-4xl font-bold my-4 mb-4">Skills</h2>
         </div>
 
         <div class="text-lg">
@@ -314,9 +319,11 @@
 
 
     <!-- Projects starts -->
-    <div class=" mt-8 md:mt-24 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+    <div id="projects" class="h-8 w-5"></div>
+
+    <div class=" mt-8 md:mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
         <section class="w-full">
-            <h2 id="projects" class="secondary-title text-3xl md:text-4xl font-bold my-2 md:my-4 ">Projects</h2>
+            <h2  class="secondary-title text-3xl md:text-4xl font-bold my-2 md:my-4 ">Projects</h2>
 
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
@@ -613,10 +620,12 @@
     <!-- Education info ends-->
 
     <!-- Contact me starts -->
+    <div id="contact" class="h-2 w-5"></div>
+
     <div
-        class="container mt-20  md:mt-32 mb-20 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-16 w-full">
+        class="container mt-16  md:mt-24 mb-20 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-16 w-full">
         <section class="w-full">
-            <h2 id="contact" class="secondary-title text-3xl md:text-4xl font-bold mt-4">Contact Me</h2>
+            <h2  class="secondary-title text-3xl md:text-4xl font-bold mt-4">Contact Me</h2>
             <a href="mailto:apurvchoubey7@gmail.com" target="_blank">
                 <div
                     class="my-10 md:my-14 rounded-md text-center p-3 md:p-6  text-lg sm:text-xl md:text-3xl font-bold border-[1px] border-green-300 hover:border-blue-400 shadow-lg  shadow-green-300 hover:shadow-blue-400 inline-block">

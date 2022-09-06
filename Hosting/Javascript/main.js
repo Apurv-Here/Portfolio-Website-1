@@ -1,40 +1,23 @@
+
 // code for hamburger menu for mobile starts
 let count = 0;
 let hamFlag = false;
-const mobileMenuShow = () => {
-  let element = document.getElementById("hamBurgerMenu");
+const hamBurgerShow = mobileMenuShow = () =>{
+    let element = document.getElementById('hamBurgerMenu');
+    
 
-  console.log(element);
+    if(count == 1){
+        element.classList.toggle('hidden');
+        element.classList.toggle('invisible');
+    }
 
-  if (count == 1) {
-    element.classList.toggle('hidden');
-    element.classList.toggle('invisible');
-
-  }
-
-  if (count < 1) {
-    count++;
-    element.classList.remove('hidden');
-    element.classList.remove('invisible');
-
-
-  }
+    if(count<1){
+        count++;
+        element.classList.remove('hidden');
+        element.classList.remove('invisible');
+    }
 
 }
-const menuBtn = document.querySelector('.menu-btn');
-let menuOpen = false;
-menuBtn.addEventListener('click', () => {
-  if(!menuOpen) {
-    menuBtn.classList.add('open');
-    menuOpen = true;
-  } else {
-    menuBtn.classList.remove('open');
-    menuOpen = false;
-  }
-
-  mobileMenuShow();
-
-});
 // code for hamburger menu for mobile ends
 
 // code for typewriter to show your name starts

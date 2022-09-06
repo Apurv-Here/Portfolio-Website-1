@@ -6,146 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apurv - Web Developer</title>
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.2a0567d1.ico">
-    
+    <link rel="icon" type="image/x-icon" href="/Images/favicon.ico">
+    <link rel="stylesheet" href="/CSS/output.css">
 
-    <script>
-        let count = 0;
-        let hamFlag = false;
-        const hamBurgerShow = mobileMenuShow = () => {
-            let element = document.getElementById('hamBurgerMenu');
-
-
-            if (count == 1) {
-                element.classList.toggle('hidden');
-                element.classList.toggle('invisible');
-            }
-
-            if (count < 1) {
-                count++;
-                element.classList.remove('hidden');
-                element.classList.remove('invisible');
-            }
-
-        }
-        // code for hamburger menu for mobile ends
-
-        // code for typewriter to show your name starts
-        var TxtType = function (el, toRotate, period) {
-            this.toRotate = toRotate;
-            this.el = el;
-            this.loopNum = 0;
-            this.period = parseInt(period, 10) || 2000;
-            this.txt = '';
-            this.tick();
-            this.isDeleting = false;
-        };
-
-        TxtType.prototype.tick = function () {
-            var i = this.loopNum % this.toRotate.length;
-            var fullTxt = this.toRotate[i];
-
-            if (this.isDeleting) {
-                this.txt = fullTxt.substring(0, this.txt.length - 1);
-            } else {
-                this.txt = fullTxt.substring(0, this.txt.length + 1);
-            }
-
-            this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
-
-            var that = this;
-            var delta = 110 - Math.random() * 100;
-
-            if (this.isDeleting) { delta /= 2; }
-
-            if (!this.isDeleting && this.txt === fullTxt) {
-                delta = this.period;
-                this.isDeleting = true;
-            } else if (this.isDeleting && this.txt === '') {
-                this.isDeleting = false;
-                this.loopNum++;
-                delta = 500;
-            }
-
-            setTimeout(function () {
-                that.tick();
-            }, delta);
-        };
-
-        window.onload = function () {
-            var elements = document.getElementsByClassName('typewrite');
-            for (var i = 0; i < elements.length; i++) {
-                var toRotate = elements[i].getAttribute('data-type');
-                var period = elements[i].getAttribute('data-period');
-                if (toRotate) {
-                    new TxtType(elements[i], JSON.parse(toRotate), period);
-                }
-            }
-            // INJECT CSS
-            var css = document.createElement("style");
-            css.type = "text/css";
-            css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-            document.body.appendChild(css);
-        };
-        // code for typewriter to show your name ends
-
-        // code for scroll on click on navbar starts
-
-        function updateList() {
-            const titles = [...document.querySelectorAll('h1, h2')].sort((a, b) => {
-                return Math.abs(a.getBoundingClientRect().top) - Math.abs(b.getBoundingClientRect().top);
-            });
-
-            document.querySelectorAll(".selected-circle").forEach(c => c.classList.remove("selected-circle"));
-
-
-        }
-
-        updateList();
-        window.addEventListener('scroll', () => {
-            updateList();
-        })
-
-// code for scroll on click on navbar ends
-
-// code for contact form start
-
-
-
-// code for contact form end
-    </script>
-  <link rel="stylesheet" href="/assets/index.108ebb94.css">
 </head>
 
 <body class="bg-body text-white font-poppins pb-12">
-    <div class="lg:sticky lg:top-0 lg:z-50"><header class="md:py-8 lg:sticky lg:top-0 lg:z-50 bg-body flex items-center container h-16 lg:h-20 ">
-        <div
-            class="container text-xl flex justify-between items-center  mx-auto px-8 sm:px-10 md:px-14 lg:px-24 w-full overflow-x-hidden">
-            <div class="text-2xl font-bold ">Apurv Choubey</div>
+    <div class="lg:sticky lg:top-0 lg:z-50">
+        <header class="md:py-8 lg:sticky lg:top-0 lg:z-50 bg-body flex items-center container h-16 lg:h-20 ">
+            <div
+                class="container text-xl flex justify-between items-center  mx-auto px-8 sm:px-10 md:px-14 lg:px-24 w-full overflow-x-hidden">
+                <div class="text-2xl font-bold ">Apurv Choubey</div>
 
-            <!-- we will hide this class when on mobile and make flex on large screen and will
+                <!-- we will hide this class when on mobile and make flex on large screen and will
                  use hamburger menu in mobile -->
-            <div class="hidden lg:flex space-x-9 items-center">
-                <a href="#" class="nav-dot  hover:border-b-4 rounded-sm  hover:border-red-700 ">Home</a>
-                <a href="#about" class="nav-dot  hover:border-b-4 rounded-sm  hover:border-red-700 ">About</a>
-                <a href="#skills" class="nav-dot hover:border-b-4 rounded-sm  hover:border-red-700 ">Skills</a>
-                <a href="#projects" class="nav-dot hover:border-b-4 rounded-sm  hover:border-red-700 ">Projects</a>
-                <a href="https://drive.google.com/drive/folders/1LMZMLQ7wL-tQvWhtHPdZE2EIazpn7fyk" target="_blank"
-                    class="nav-dot hover:border-b-4 rounded-sm  hover:border-red-700 ">Resume</a>
-                <a href="#contact"
-                    class="nav-dot px-5 py-1.5 font-semibold  rounded-md  shadow-lg border-2 border-green-300 text-green-300 hover:shadow-lg hover:border-blue-400 hover:text-blue-400 hover:shadow-blue-400 "><button>Contact
-                        Me</button></a>
+                <div class="hidden lg:flex space-x-9 items-center">
+                    <a href="#" class="nav-dot  hover:border-b-4 rounded-sm  hover:border-red-700 ">Home</a>
+                    <a href="#about" class="nav-dot  hover:border-b-4 rounded-sm  hover:border-red-700 ">About</a>
+                    <a href="#skills" class="nav-dot hover:border-b-4 rounded-sm  hover:border-red-700 ">Skills</a>
+                    <a href="#projects" class="nav-dot hover:border-b-4 rounded-sm  hover:border-red-700 ">Projects</a>
+                    <a href="https://drive.google.com/drive/folders/1LMZMLQ7wL-tQvWhtHPdZE2EIazpn7fyk" target="_blank"
+                        class="nav-dot hover:border-b-4 rounded-sm  hover:border-red-700 ">Resume</a>
+                    <a href="#contact"
+                        class="nav-dot px-5 py-1.5 font-semibold  rounded-md  shadow-lg border-2 border-green-300 text-green-300 hover:shadow-lg hover:border-blue-400 hover:text-blue-400 hover:shadow-blue-400 "><button>Contact
+                            Me</button></a>
+                </div>
+                <div class="hamburger inline-block p-4 lg:hidden lg:invisible" id="hamburger3line"
+                    onclick="mobileMenuShow()">
+                    <div class=" h-0.5 w-6 my-1 bg-white"></div>
+                    <div class=" h-0.5 w-6 my-1 bg-white"></div>
+                    <div class=" h-0.5 w-6 my-1 bg-white"></div>
+                </div>
             </div>
-            <div class="hamburger inline-block p-4 lg:hidden lg:invisible" id="hamburger3line"
-                onclick="mobileMenuShow()">
-                <div class=" h-0.5 w-6 my-1 bg-white"></div>
-                <div class=" h-0.5 w-6 my-1 bg-white"></div>
-                <div class=" h-0.5 w-6 my-1 bg-white"></div>
-            </div>
-        </div>
 
 
-    </header></div>
+        </header>
+    </div>
     <!-- On mobile it will be hamburger menu options on click and it will be hidden on large screen-->
     <div class="hidden invisible lg:hidden lg:invisible mx-9 md:ml-20  " id="hamBurgerMenu">
         <div class=" text-xl ">
@@ -181,7 +77,7 @@
         <div class="bg-body lg:flex  lg:justify-end ">
             <div class=" lg:order-2 lg:h-full lg:mr-14    ">
                 <img class="mt-12 md:mt-16  h-[300px] w-[100vw]  sm:h-[400px] md:h-[500px] lg:w-[700px]  object-contain"
-                    src="/assets/GrootGif.490910db.gif" alt="butterfly">
+                    src="/Images/GrootGif.gif" alt="butterfly">
             </div>
             <div class="mx-auto md:mx-7 md:ml-14 my-2 lg:mr-0  flex flex-col justify-center items-center w-80">
 
@@ -198,7 +94,7 @@
                     <div class="mt-6 mb-4 block"><button
                             class="flex items-center py-2 rounded-md  text-[#a16c1d] lg:text-lg font-bold shadow-md shadow-[#a16c1d] hover:shadow-sm hover:shadow-[#e0b470] hover:text-[#e0b470]">
                             <div class="flex justify-center items-center pl-1"><img
-                                    class="h-8 w-8 object-cover rounded-full p-0.5" src="data:image/webp;base64,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"
+                                    class="h-8 w-8 object-cover rounded-full p-0.5" src="/Images/leetcode_icon1.webp"
                                     alt=""></div>
                             <div class="pl-3 pr-3">Leetcode Profile</div>
                         </button></div>
@@ -228,7 +124,8 @@
                                     <svg width="3rem" height="3rem" viewBox="71 71 370 370">
                                         <path
                                             d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z" />
-                                    </svg></div>
+                                    </svg>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -241,7 +138,8 @@
                                         <path
                                             d="M12,0C5.4,0,0,5.4,0,12s5.4,12,12,12c6.6,0,12-5.4,12-12S18.6,0,12,0z M18,9.7c0,0.1,0,0.2,0,0.4c0,3.8-2.9,8.2-8.2,8.2c-1.6,0-3.2-0.5-4.4-1.3c0.2,0,0.5,0,0.7,0c1.4,0,2.6-0.5,3.6-1.2c-1.3,0-2.3-0.9-2.7-2c0.2,0,0.4,0.1,0.5,0.1c0.3,0,0.5,0,0.8-0.1C6.9,13.5,6,12.3,6,10.9c0,0,0,0,0,0c0.4,0.2,0.8,0.3,1.3,0.4C6.5,10.7,6,9.9,6,8.8c0-0.5,0.1-1,0.4-1.5c1.4,1.8,3.6,2.9,6,3c-0.1-0.2-0.1-0.4-0.1-0.7c0-1.6,1.3-2.9,2.9-2.9c0.8,0,1.6,0.3,2.1,0.9c0.7-0.1,1.3-0.4,1.8-0.7c-0.2,0.7-0.7,1.2-1.3,1.6c0.6-0.1,1.1-0.2,1.7-0.5C19.1,8.8,18.6,9.3,18,9.7z">
                                         </path>
-                                    </svg></div>
+                                    </svg>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -284,7 +182,8 @@
                             <svg width="3rem" height="3rem" viewBox="71 71 370 370">
                                 <path
                                     d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z" />
-                            </svg></div>
+                            </svg>
+                        </div>
                     </div>
                 </a>
             </div>
@@ -308,44 +207,44 @@
             <div class="text-2xl font-semibold text-center my-3 ">Languages & Databases</div>
             <div class="flex flex-wrap  justify-center items-center">
 
-                <div class="m-4">
+                <div class="m-4 box">
                     <div class="flex justify-center items-center"><img class="h-16 w-16 md:h-24 md:w-24 object-cover"
-                            src="/assets/cpp_logo_2.16aa58b9.png" alt="cpp"></div>
+                            src="/Images/cpp_logo_2.png" alt="cpp"></div>
                     <div class="text-center m-1 mt-3 mb-2 text-sm text-secondary">C++</div>
                 </div>
-                <div class="m-4">
+                <div class="m-4 box">
                     <div class="flex justify-center items-center"><img class="h-16 w-16 md:h-24 md:w-24 object-cover"
-                            src="/assets/javascript_logo.48d02175.png" alt="javascript"></div>
+                            src="/Images/javascript_logo.png" alt="javascript"></div>
                     <div class="text-center m-1 mt-3 mb-2 text-sm text-secondary">Javascript</div>
                 </div>
-                <div class="m-4">
+                <div class="m-4 box">
                     <div class="flex justify-center items-center"><img class="h-16 w-16 md:h-24 md:w-24 object-cover"
-                            src="/assets/java_logo.0158da3c.png" alt="java"></div>
+                            src="/Images/java_logo.png" alt="java"></div>
                     <div class="text-center m-1 mt-3 mb-2 text-sm text-secondary">Java</div>
                 </div>
-                <div class="m-4">
+                <div class="m-4 box">
                     <div class="flex justify-center items-center"><img class="h-16 w-16 md:h-24 md:w-24 object-cover"
-                            src="/assets/python_logo.314ea70d.png" alt="python"></div>
+                            src="/Images/python_logo.png" alt="python"></div>
                     <div class="text-center m-1 mt-3 mb-2 text-sm text-secondary">Python</div>
                 </div>
-                <div class="m-4">
+                <div class="m-4 box">
                     <div class="flex justify-center items-center"><img class="h-16 w-16 md:h-24 md:w-24 object-cover"
-                            src="/assets/html_logo.e5987020.png" alt="html"></div>
+                            src="/Images/html_logo.png" alt="html"></div>
                     <div class="text-center m-1 mt-3 mb-2 text-sm text-secondary">HTML</div>
                 </div>
-                <div class="m-4">
+                <div class="m-4 box">
                     <div class="flex justify-center items-center"><img class="h-16 w-16 md:h-24 md:w-24 object-cover"
-                            src="/assets/css_logo.d3b865cf.png" alt="css"></div>
+                            src="/Images/css_logo.png" alt="css"></div>
                     <div class="text-center m-1 mt-3 mb-2 text-sm text-secondary">CSS</div>
                 </div>
-                <div class="m-4">
+                <div class="m-4 box">
                     <div class="flex justify-center items-center"><img class="h-16 w-16 md:h-24 md:w-24 object-cover"
-                            src="/assets/mysql_logo.bc523966.png" alt="MySql"></div>
+                            src="/Images/mysql_logo.png" alt="MySql"></div>
                     <div class="text-center m-1 mt-3 mb-2 text-sm text-secondary">MySql</div>
                 </div>
-                <div class="m-4">
+                <div class="m-4 box">
                     <div class="flex justify-center items-center"><img class="h-16 w-16 md:h-24 md:w-24 object-cover"
-                            src="/assets/mongo-db_logo.618f4b51.png" alt="mongo-db"></div>
+                            src="/Images/mongo-db_logo.png" alt="mongo-db"></div>
                     <div class="text-center m-1 mt-3 mb-2 text-sm text-secondary">Mongo-DB</div>
                 </div>
 
@@ -357,24 +256,24 @@
             <div class="text-2xl font-semibold text-center my-3 ">Frameworks & Technologies</div>
             <div class="flex flex-wrap  justify-center items-center">
 
-                <div class="m-4">
+                <div class="m-4 box">
                     <div class="flex justify-center items-center"><img class="h-16 w-16 md:h-24 md:w-24 object-cover"
-                            src="/assets/tailwindcss_logo.709f7c3c.png" alt="tailwindcss"></div>
+                            src="/Images/tailwindcss_logo.png" alt="tailwindcss"></div>
                     <div class="text-center m-1 mt-3 mb-2 text-sm text-secondary">Tailwind CSS</div>
                 </div>
-                <div class="m-4">
+                <div class="m-4 box">
                     <div class="flex justify-center items-center"><img class="h-16 w-16 md:h-24 md:w-24 object-cover"
-                            src="/assets/bootstrap_logo.1660c8e9.png" alt="bootstrap"></div>
+                            src="/Images/bootstrap_logo.png" alt="bootstrap"></div>
                     <div class="text-center m-1 mt-3 mb-2 text-sm text-secondary">Bootstrap</div>
                 </div>
-                <div class="m-4">
+                <div class="m-4 box">
                     <div class="flex justify-center items-center"><img class="h-16 w-16 md:h-24 md:w-24 object-cover"
-                            src="/assets/react_logo.31e000ff.png" alt="reactJS"></div>
+                            src="/Images/react_logo.png" alt="reactJS"></div>
                     <div class="text-center m-1 mt-3 mb-2 text-sm text-secondary">React JS</div>
                 </div>
-                <div class="m-4">
+                <div class="m-4 box">
                     <div class="flex justify-center items-center"><img class="h-16 w-16 md:h-24 md:w-24 object-cover"
-                            src="/assets/nodejs_logo.72826ebb.png" alt="nodejs"></div>
+                            src="/Images/nodejs_logo.png" alt="nodejs"></div>
                     <div class="text-center m-1 mt-3 mb-2 text-sm text-secondary">Node JS</div>
                 </div>
 
@@ -388,19 +287,19 @@
             <div class="text-2xl font-semibold text-center my-3 ">Tools & Platforms</div>
             <div class="flex flex-wrap  justify-center items-center">
 
-                <div class="m-4">
+                <div class="m-4 box">
                     <div class="flex justify-center items-center"><img class="h-16 w-16 md:h-24 md:w-24 object-cover"
-                            src="data:image/png;base64,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" alt="git"></div>
+                            src="/Images/git_logo.png" alt="git"></div>
                     <div class="text-center m-1 mt-3 mb-2 text-sm text-secondary">GIT</div>
                 </div>
-                <div class="m-4">
+                <div class="m-4 box">
                     <div class="flex justify-center items-center"><img class="h-16 w-16 md:h-24 md:w-24 object-cover"
-                            src="/assets/netlify_logo.28ab8a83.png" alt="netlify"></div>
+                            src="/Images/netlify_logo.png" alt="netlify"></div>
                     <div class="text-center m-1 mt-3 mb-2 text-sm text-secondary">Netlify</div>
                 </div>
-                <div class="m-4">
+                <div class="m-4 box">
                     <div class="flex justify-center items-center"><img class="h-16 w-16 md:h-24 md:w-24 object-cover"
-                            src="/assets/firebase_logo.427ade52.png" alt="firebase"></div>
+                            src="/Images/firebase_logo.png" alt="firebase"></div>
                     <div class="text-center m-1 mt-3 mb-2 text-sm text-secondary">Firebase</div>
                 </div>
 
@@ -422,28 +321,33 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
 
-
-                <!-- Project - 1 start (News app with react) -->
+                <!-- Project - 1 start (Food Recipe App With React jS)-->
                 <div
-                    class="w-full  md:w-[40vw]  lg:w-[27vw] sm:my-6   mx-auto  my-3 lg:my-3 lg:mb-6 hover:text-green-300">
+                    class="w-full  md:w-[40vw]  lg:w-[27vw] sm:my-6  mx-auto my-3 lg:my-3 lg:mb-6 ">
                     <!-- Image div -->
-                    <div><a href="https://github.com/Apurv-Here/News-App-with-React" target="_blank"><img
-                                src="/assets/newsAppReact.78cb7c92.png" class="w-full  h-36 lg:h-60 object-cover"
-                                alt="newsapp"></a></div>
+                    <div class="img-wrapper"><a href="https://foodieee-recipe-app.netlify.app/" target="_blank"><img
+                                src="/Images/FoodieRecipeApp.png" class="inner-img w-full  h-36 lg:h-48 object-cover"
+                                alt="Foodie"></a></div>
 
                     <!-- description -->
                     <div class="flex">
-                        <div class=" pt-4   "><img class=" h-10 w-10   object-cover " src="/assets/react_logo.31e000ff.png"
-                                alt="newsapp"></div>
+                        <div class=" pt-4   "><img class=" h-10 w-10   object-cover " src="/Images/react_logo.png"
+                                alt="Foodie"></div>
                         <div>
                             <div class="">
-                                <h3 class="pt-3 pb-3 pl-4 pr-1 md:px-4 text-base font-bold">News Web Application</h3>
+                                <a href="https://foodieee-recipe-app.netlify.app/" target="_blank"><h3 class="hover:text-orange-100 pt-3 pb-3 pl-4 pr-1 md:px-4 text-base font-bold">Food Recipe App</h3></a>
                             </div>
                             <div class="">
-                                <a href="https://github.com/Apurv-Here/News-App-with-React" target="_blank">
-                                    <p class="text-xs  text-secondary pl-4 pr-1 md:px-4 hover:text-green-300">Github
+                                <a href="https://github.com/Apurv-Here/Recipe-App-With-React"
+                                    target="_blank">
+                                    <p class="text-xs mb-2  text-secondary pl-4 pr-1 md:px-4 hover:text-green-300">
+                                        Github Link</p>
+                                </a>
+                                <a href="https://foodieee-recipe-app.netlify.app/" target="_blank">
+                                    <p class="text-xs  mt-2 text-secondary pl-4 pr-1 md:px-4 hover:text-green-300">Live
                                         Link</p>
                                 </a>
+
                             </div>
 
                         </div>
@@ -452,22 +356,25 @@
                 </div>
                 <!-- Project - 1 end -->
 
+
+                
+
                 <!-- Project - 2 start (Microsoft frontend clone)-->
                 <div
-                    class="w-full  md:w-[40vw]  lg:w-[27vw] sm:my-6  mx-auto my-3 lg:my-3 lg:mb-6 hover:text-green-300">
+                    class="w-full  md:w-[40vw]  lg:w-[27vw] sm:my-6  mx-auto my-3 lg:my-3 lg:mb-6 ">
                     <!-- Image div -->
-                    <div><a href="https://choubey-microsoft-clone.netlify.app/" target="_blank"><img
-                                src="/assets/microsoftClone.45f89501.png" class="w-full  h-36 lg:h-60 object-cover"
+                    <div class="img-wrapper"><a href="https://choubey-microsoft-clone.netlify.app/" target="_blank"><img
+                                src="/Images/microsoftClone.png" class="inner-img w-full  h-36 lg:h-48 object-cover"
                                 alt="microsoft"></a></div>
 
                     <!-- description -->
                     <div class="flex">
-                        <div class=" pt-4   "><img class=" h-12 w-12   object-cover " src="/assets/tailwindcss_logo.709f7c3c.png"
+                        <div class=" pt-4   "><img class=" h-12 w-12   object-cover " src="/Images/tailwindcss_logo.png"
                                 alt="microsoft"></div>
                         <div>
                             <div class="">
-                                <h3 class="pt-3 pb-3 pl-4 pr-1 md:px-4 text-base font-bold">Microsoft Homepage Clone
-                                    (frontend only)</h3>
+                                <a href="https://choubey-microsoft-clone.netlify.app/" target="_blank"><h3 class="pt-3 pb-3 pl-4 pr-1 md:px-4 text-base font-bold hover:text-orange-100">Microsoft Homepage Clone
+                                    (frontend only)</h3></a>
                             </div>
                             <div class="">
                                 <a href="https://github.com/Apurv-Here/Microsoft-Homepage-Second-Website-Challenge"
@@ -488,21 +395,58 @@
                 </div>
                 <!-- Project - 2 end -->
 
-                <!-- Project - 3 start (Text utility app) -->
+                <!-- Project - 3 start (News app with react) -->
                 <div
-                    class="w-full  md:w-[40vw]  lg:w-[27vw] sm:my-6  mx-auto my-3 lg:my-3 lg:mb-6 hover:text-green-300">
+                    class="w-full  md:w-[40vw]  lg:w-[27vw] sm:my-6   mx-auto  my-3 lg:my-3 lg:mb-6 ">
                     <!-- Image div -->
-                    <div><a href="https://apurv-here.github.io/TextUtils-with-React/" target="_blank"><img
-                                src="/assets/textutility.4d03f02f.png" class="w-full  h-36 lg:h-60 object-cover"
+                    <div class="img-wrapper"><a href="https://github.com/Apurv-Here/News-App-with-React" target="_blank"><img
+                                src="/Images/newsAppReact.png" class="inner-img w-full  h-36 lg:h-48 object-cover"
+                                alt="newsapp"></a></div>
+
+                    <!-- Image div 2 with animation start -->
+                    <!-- <div class="img-wrapper">
+                        <img class="inner-img w-full  h-36 lg:h-60 object-cover" src="https://source.unsplash.com/random/400x400" />
+                    </div> -->
+
+                    <!-- Image div 2 with animation end -->
+
+
+                    <!-- description -->
+                    <div class="flex">
+                        <div class=" pt-4   "><img class=" h-10 w-10   object-cover " src="/Images/react_logo.png"
+                                alt="newsapp"></div>
+                        <div>
+                            <div class="">
+                                <a href="https://github.com/Apurv-Here/News-App-with-React" target="_blank"><h3 class="pt-3 pb-3 pl-4 pr-1 md:px-4 text-base font-bold hover:text-orange-100">News Web Application</h3></a>
+                            </div>
+                            <div class="">
+                                <a href="https://github.com/Apurv-Here/News-App-with-React" target="_blank">
+                                    <p class="text-xs  text-secondary pl-4 pr-1 md:px-4 hover:text-green-300">Github
+                                        Link</p>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Project - 3 end -->
+
+                <!-- Project - 4 start (Text utility app) -->
+                <div
+                    class="w-full  md:w-[40vw]  lg:w-[27vw] sm:my-6  mx-auto my-3 lg:my-3 lg:mb-6 ">
+                    <!-- Image div -->
+                    <div class="img-wrapper"><a href="https://apurv-here.github.io/TextUtils-with-React/" target="_blank"><img
+                                src="/Images/textutility.png" class="inner-img w-full  h-36 lg:h-48 object-cover"
                                 alt="textUtility"></a></div>
 
                     <!-- description -->
                     <div class="flex">
-                        <div class=" pt-4   "><img class=" h-12 w-12   object-cover " src="/assets/bootstrap_logo.1660c8e9.png"
+                        <div class=" pt-4   "><img class=" h-12 w-12   object-cover " src="/Images/bootstrap_logo.png"
                                 alt="textUtility"></div>
                         <div>
                             <div class="">
-                                <h3 class="pt-3 pb-3 pl-4 pr-1 md:px-4 text-base font-bold">Text Utility App</h3>
+                                <a href="https://apurv-here.github.io/TextUtils-with-React/" target="_blank"><h3 class="pt-3 pb-3 pl-4 pr-1 md:px-4 text-base font-bold hover:text-orange-100">Text Utility App</h3></a>
                             </div>
                             <div class="">
                                 <a href="https://github.com/Apurv-Here/TextUtils-with-React" target="_blank">
@@ -520,24 +464,24 @@
                     </div>
 
                 </div>
-                <!-- Project - 3 end -->
+                <!-- Project - 4 end -->
 
-                <!-- Project - 4 start (Desktop assistant with python)-->
+                <!-- Project - 5 start (Desktop assistant with python)-->
                 <div
-                    class="w-full  md:w-[40vw]  lg:w-[27vw] sm:my-6  mx-auto my-3 lg:my-3 lg:mb-6 hover:text-green-300">
+                    class="w-full  md:w-[40vw]  lg:w-[27vw] sm:my-6  mx-auto my-3 lg:my-3 lg:mb-6 ">
                     <!-- Image div -->
-                    <div><a href="https://github.com/Apurv-Here/Python-Desktop-Assistant" target="_blank"><img
-                                src="/assets/desktopAssistant.57bac716.jpeg" class="w-full  h-36 lg:h-60 object-cover"
+                    <div class="img-wrapper"><a href="https://github.com/Apurv-Here/Python-Desktop-Assistant" target="_blank"><img
+                                src="/Images/desktopAssistant.jpeg" class="inner-img w-full  h-36 lg:h-48 object-cover"
                                 alt="desktopAssistant"></a></div>
 
                     <!-- description -->
                     <div class="flex">
-                        <div class=" pt-4   "><img class=" h-10 w-10   object-cover " src="/assets/python_logo.314ea70d.png"
+                        <div class=" pt-4   "><img class=" h-10 w-10   object-cover " src="/Images/python_logo.png"
                                 alt="desktopAssistant"></div>
                         <div>
                             <div class="">
-                                <h3 class="pt-3 pb-3 pl-4 pr-1 md:px-4 text-base font-bold">Desktop Assistant With
-                                    Python</h3>
+                                <a href="https://github.com/Apurv-Here/Python-Desktop-Assistant" target="_blank"><h3 class="pt-3 pb-3 pl-4 pr-1 md:px-4 text-base font-bold hover:text-orange-100">Desktop Assistant With
+                                    Python</h3></a>
                             </div>
                             <div class="">
                                 <a href="https://github.com/Apurv-Here/Python-Desktop-Assistant" target="_blank">
@@ -551,24 +495,25 @@
                     </div>
 
                 </div>
-                <!-- Project - 4 end -->
+                <!-- Project - 5 end -->
 
-                <!-- Project - 5 start (United stand website)-->
+                <!-- Project - 6 start (United stand website)-->
                 <div
-                    class="w-full  md:w-[40vw]  lg:w-[27vw] sm:my-6  mx-auto my-3 lg:my-3 lg:mb-6 hover:text-green-300">
+                    class="w-full  md:w-[40vw]  lg:w-[27vw] sm:my-6  mx-auto my-3 lg:my-3 lg:mb-6 ">
                     <!-- Image div -->
-                    <div><a href="https://6290d40f07a43c3639084f13--glowing-flan-36c542.netlify.app/"
-                            target="_blank"><img src="/assets/unitedStandClone.435a7724.png"
-                                class="w-full  h-36 lg:h-60 object-cover" alt="unitedStand"></a></div>
+                    <div class="img-wrapper"><a href="https://6290d40f07a43c3639084f13--glowing-flan-36c542.netlify.app/"
+                            target="_blank"><img src="/Images/unitedStandClone.png"
+                                class="inner-img w-full  h-36 lg:h-48 object-cover" alt="unitedStand"></a></div>
 
                     <!-- description -->
                     <div class="flex">
-                        <div class=" pt-4   "><img class=" h-12 w-12   object-cover " src="/assets/html_logo.e5987020.png"
+                        <div class=" pt-4   "><img class=" h-12 w-12   object-cover " src="/Images/html_logo.png"
                                 alt="unitedStand"></div>
                         <div>
                             <div class="">
-                                <h3 class="pt-3 pb-3 pl-4 pr-1 md:px-4 text-base font-bold">The United Stand Football
-                                    Website</h3>
+                                <a href="https://6290d40f07a43c3639084f13--glowing-flan-36c542.netlify.app/"
+                                    target="_blank"><h3 class="pt-3 pb-3 pl-4 pr-1 md:px-4 text-base font-bold hover:text-orange-100">The United Stand Football
+                                    Website</h3></a>
                             </div>
                             <div class="">
                                 <a href="https://github.com/Apurv-Here/The-United-Stand-First-Website-Challenge"
@@ -588,40 +533,9 @@
                     </div>
 
                 </div>
-                <!-- Project - 5 end -->
-
-                <!-- Project - 6 start (Click game) -->
-                <div
-                    class="w-full  md:w-[40vw]  lg:w-[27vw] sm:my-6  mx-auto my-3 lg:my-3 lg:mb-6 hover:text-green-300">
-                    <!-- Image div -->
-                    <div><a href="https://clickgame5.netlify.app/" target="_blank"><img src="/assets/clickgame.0daf3229.png"
-                                class="w-full  h-36 lg:h-60 object-cover" alt="clickgame"></a></div>
-
-                    <!-- description -->
-                    <div class="flex">
-                        <div class=" pt-4   "><img class=" h-12 w-12   object-cover " src="/assets/css_logo.d3b865cf.png"
-                                alt="clickgame"></div>
-                        <div>
-                            <div class="">
-                                <h3 class="pt-3 pb-3 pl-4 pr-1 md:px-4 text-base font-bold">Clickgame</h3>
-                            </div>
-                            <div class="">
-                                <a href="https://github.com/Apurv-Here/ClickGame-with-Javascript" target="_blank">
-                                    <p class="text-xs mb-2  text-secondary pl-4 pr-1 md:px-4 hover:text-green-300">
-                                        Github Link</p>
-                                </a>
-                                <a href="https://clickgame5.netlify.app/" target="_blank">
-                                    <p class="text-xs  mt-2 text-secondary pl-4 pr-1 md:px-4 hover:text-green-300">Live
-                                        Link</p>
-                                </a>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
                 <!-- Project - 6 end -->
+
+                
 
 
 
@@ -651,7 +565,7 @@
 
                     <!-- College logo -->
                     <div class=" lg:mb-0 flex justify-center items-center  ">
-                        <img class="h-52 w-56 lg:h-52 lg:w-64    object-cover rounded-full" src="/assets/vit_logo.39122c33.png"
+                        <img class="h-52 w-56 lg:h-52 lg:w-64    object-cover rounded-full" src="/Images/vit_logo.png"
                             alt="logo">
                     </div>
 
@@ -675,7 +589,7 @@
                     <div class="lg:mb-0 flex justify-center items-center">
                         <div class=" lg:mb-0 flex justify-center items-center  ">
                             <img class="h-52 w-56 lg:h-52 lg:w-64  object-cover rounded-full"
-                                src="/assets/school_logo.e9fda9e9.png" alt="logo">
+                                src="/Images/school_logo.png" alt="logo">
                         </div>
                     </div>
 
@@ -803,7 +717,7 @@
 
 
 
-    <!-- <script src="main.js"></script> -->
+    <script src="./Javascript/main.js"></script>
 </body>
 
 </html>

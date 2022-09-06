@@ -3,14 +3,59 @@
 @tailwind utilities;
 
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
+
+.menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+.menu-btn__burger {
+  width: 30px;
+  height: 2px;
+  background: #fff;
+  border-radius: 6px;
+  transition: all .5s ease-in-out;
+}
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background: #fff;
+  border-radius: 5px;
+  transition: all .5s ease-in-out;
+}
+.menu-btn__burger::before {
+  transform: translateY(-12px);
+}
+.menu-btn__burger::after {
+  transform: translateY(12px);
+}
+/* ANIMATION */
+.menu-btn.open .menu-btn__burger {
+  transform: translateX(-50px);
+  background: transparent;
+}
+.menu-btn.open .menu-btn__burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+.menu-btn.open .menu-btn__burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
 
 
 
-.img-wrapper {  
-  
-  overflow: hidden; 
+.img-wrapper {
+
+  overflow: hidden;
 }
 
 .inner-img {
@@ -21,21 +66,19 @@ html {
   transform: scale(1.2);
 }
 
-/* Other styling elements, that are not necessary for the example */
 
 .img-wrapper {
-  /* display: inline-block; */
   box-sizing: border-box;
-  /* border: 1px solid white; */
 }
 
-.box{
- 
+.box {
+
   transition: 0.4s;
 
 }
-.box:hover{
+
+.box:hover {
   transform: scale(1.3);
   z-index: 2;
-  
+
 }
