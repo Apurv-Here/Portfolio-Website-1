@@ -618,6 +618,10 @@ video {
   right: -0px;
 }
 
+.z-\[999\] {
+  z-index: 999;
+}
+
 .z-40 {
   z-index: 40;
 }
@@ -952,12 +956,12 @@ video {
   width: 4rem;
 }
 
-.w-10 {
-  width: 2.5rem;
-}
-
 .w-12 {
   width: 3rem;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .w-56 {
@@ -1467,12 +1471,12 @@ video {
   transition-duration: 500ms;
 }
 
-.ease-in {
-  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
-}
-
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ease-in {
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
 html {
